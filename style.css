@@ -390,8 +390,19 @@ input {
     .deal-content {
         flex-direction: column;
     }
+    .inner-dea2 {
+        width: 550px;
+    }
     .join {
         margin: 20px 0px;
+    }
+    input {
+        width: 200px;
+        height: 40px;
+        border: none;
+        color: #8987A1;
+        font-size: 1rem;
+        padding-left: 20px;
     }
     .footer,
     .middle {
