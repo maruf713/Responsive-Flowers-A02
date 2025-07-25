@@ -69,6 +69,7 @@ a {
 .fa-solid {
     font-size: 1rem;
     color: #252432;
+    margin-bottom: 30px;
 }
 
 
@@ -285,8 +286,9 @@ li {
 /* Join section style */
 
 .join {
+    width: 100%;
     padding: 120px 0px;
-    background: rgba(20, 7, 79, 0.4);
+    background: url(./img/news-letter-bg.png);
     text-align: center;
 }
 
@@ -388,8 +390,12 @@ input {
     .deal-content {
         flex-direction: column;
     }
+    .join {
+        margin: 20px 0px;
+    }
     .footer,
     .middle {
         flex-direction: column;
+        margin: 20px 0px;
     }
 }
