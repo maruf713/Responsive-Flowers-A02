@@ -147,6 +147,14 @@ p {
     padding: 20px 80px;
     background: #E95A08;
     border: none;
+    transition: 1s ease-in;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #E95A08;
+    background: transparent;
+    border: 1px solid #E95A08;
 }
 
 
@@ -184,11 +192,168 @@ li {
 }
 
 
+/* deal style */
+
+.deal {
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.deal-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #000;
+    margin: 15px 0px;
+}
+
+.cut {
+    color: #E95A08;
+}
+
+.deal-description {
+    padding: 0px 96px;
+    line-height: 1.4em;
+}
+
+.deal-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.inner-deal {}
+
+.bloom {
+    width: 77%;
+    padding: 65px 50px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.7em;
+}
+
+.ana {
+    width: 54%;
+    padding: 69px 87px;
+    background: url(./img/deal-ana.png) no-repeat center;
+    color: white;
+    border-radius: 11px;
+    font-weight: 700;
+    line-height: 1.7em;
+    font-size: 1.1rem;
+}
+
+.inner-dea2 {
+    width: 750px;
+    height: 407px;
+    border-radius: 10px;
+    background: url(./img/deal-zabo.png) no-repeat center;
+}
+
+.zabo {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 160px 0px;
+}
+
+.zabo-inn {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.shop-deal {
+    margin: 20px;
+    color: white;
+    font-size: .8rem;
+    text-decoration: underline;
+}
+
+.shop-deal2 {
+    margin: 20px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+/* Join section style */
+
+.join {
+    padding: 120px 0px;
+    background: rgba(20, 7, 79, 0.4);
+    text-align: center;
+}
+
+.join,
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: white;
+    margin: 5px 0px;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    border: none;
+    color: #8987A1;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+.join .btn-primary {
+    padding: 12px 25px;
+    margin-left: -12px;
+}
+
+.placeholder {
+    color: #8987A1;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+
+/* footer style */
+
+.footer {
+    display: flex;
+    margin: 50px 100px;
+    gap: 35px;
+}
+
+.left {
+    width: 33%;
+}
+
+.middle {
+    display: flex;
+}
+
+.middle-inn ul {
+    list-style: none;
+}
+
+.right {
+    padding: 20px 0px;
+}
+
+.right img {
+    margin-right: 20px;
+}
+
+
 /* @media Quer */
 
 @media screen and (max-width: 576px) {
     .main {
         margin: 0px 0px;
+        align-items: center;
     }
     .nav,
     .nav-content,
@@ -219,5 +384,12 @@ li {
     }
     .img-two {
         display: none;
+    }
+    .deal-content {
+        flex-direction: column;
+    }
+    .footer,
+    .middle {
+        flex-direction: column;
     }
 }
